@@ -22,8 +22,9 @@ const newFormHandler = async (event) => {
   }
 };
 
+
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('post.id')) {
+  if (event.target.matches('.btn-danger')) {
     const id = event.target.getAttribute('data-id');
 
     const response = await fetch(`/api/posts/${id}`, {
@@ -37,11 +38,9 @@ const delButtonHandler = async (event) => {
     }
   }
 };
-//match up queries
-document
-  .querySelector('.new-post-form')
-  .addEventListener('submit', newFormHandler);
 
 document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
+
+  
