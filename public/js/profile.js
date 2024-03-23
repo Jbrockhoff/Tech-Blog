@@ -22,25 +22,28 @@ const newFormHandler = async (event) => {
   }
 };
 
+// const delButtonHandler = async (event) => {
+//   if (event.target.hasAttribute('post.id')) {
+//     const id = event.target.getAttribute('data-id');
 
-const delButtonHandler = async (event) => {
-  if (event.target.matches('.btn-danger')) {
-    const id = event.target.getAttribute('data-id');
+//     const response = await fetch(`/api/posts/${id}`, {
+//       method: 'DELETE',
+//     });
 
-    const response = await fetch(`/api/posts/${id}`, {
-      method: 'DELETE',
-    });
+//     if (response.ok) {
+//       document.location.replace('/profile');
+//     } else {
+//       alert('Failed to delete post');
+//     }
+//   }
+// };
+// //match up queries
+// document
+//   .querySelector('.new-post-form')
+//   .addEventListener('submit', newFormHandler);
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete post');
-    }
-  }
-};
-
-document
-  .querySelector('.post-list')
-  .addEventListener('click', delButtonHandler);
+// document
+//   .querySelector('.post-list')
+//   .addEventListener('click', delButtonHandler);
 
   
