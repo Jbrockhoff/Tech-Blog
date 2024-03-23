@@ -45,8 +45,6 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
-
-//Add dashboard(currently profile)/homepage to navbar
 //Add COMMENT button on existing posts, post is updated (comment, poster, date created)
 //Add EDIT button for posts I've made
 //Send back updated post list once new post created

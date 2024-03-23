@@ -1,6 +1,6 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
-//edit # for project to post
+
   const title = document.querySelector('#post-name').value.trim();
   
   const content = document.querySelector('#post-content').value.trim();
@@ -38,7 +38,6 @@ const delButtonHandler = async (event) => {
   }
 };
 
-//match up queries
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
