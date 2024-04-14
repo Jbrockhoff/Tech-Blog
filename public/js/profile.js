@@ -1,3 +1,4 @@
+//Creates a new post
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -22,8 +23,7 @@ const newFormHandler = async (event) => {
   }
 };
 
-
-
+//Deletes existing post
 const delButtonHandler = async (event) => {
   if (event.target.matches('.btn-danger')) {
     const id = event.target.getAttribute('data-id');

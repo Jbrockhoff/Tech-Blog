@@ -1,3 +1,4 @@
+//Allows logged in user to make comments on any post
 const newFormHandler = async (event) => {
     event.preventDefault();
     
@@ -23,4 +24,4 @@ const newFormHandler = async (event) => {
   
   document
   .querySelector('#new-comment-form')
-  .addEventListener('submit', newFormHandler);
+  .addEventListener('submit', newFormHandler)

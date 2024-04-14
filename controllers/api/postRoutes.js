@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Post } = require('../../models');
 
+//function to create a new post
 router.post('/', async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -14,6 +15,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+//function to delete existing post to user who created it
 router.delete('/:id', async (req, res) => {
   try {
     const postData = await Post.destroy({
