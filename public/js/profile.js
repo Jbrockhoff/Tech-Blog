@@ -22,6 +22,8 @@ const newFormHandler = async (event) => {
   }
 };
 
+
+
 const delButtonHandler = async (event) => {
   if (event.target.matches('.btn-danger')) {
     const id = event.target.getAttribute('data-id');

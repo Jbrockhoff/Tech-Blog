@@ -20,17 +20,24 @@ Comment.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: User.id
+            references: {
+                model: 'user',
+                key: 'id',
+              },
         },
         date: {
             type: DataTypes.DATE,
-            allowNull: false
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: Post.id
-        }
+            references: {
+                model: 'post',
+                key: 'id',
+              },
+        },
     },
     {
         hooks: {
