@@ -21,7 +21,7 @@ https://github.com/Jbrockhoff/Tech-Blog
 
 Here is a link to my Heroku deployed application:
 
-
+https://tech-blog2323-4abcf9ae068c.herokuapp.com/
 
 ## License
 ISC
